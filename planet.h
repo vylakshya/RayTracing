@@ -10,23 +10,18 @@ class planet{
         radius = r;
     }
     void Body(SDL_Renderer *ren, double x, double y){
-        // for (int i = x - radius; i < x + radius; i++)
-        // {
-        //     for (int j = y - radius; j < y + radius; j++)
-        //     {
-        //         float dis = sqrt(((i-x)*(i-x)) + ((j-y)*(j-y)));
-        //         if (dis <= radius)
-        //         {
-        //             SDL_RenderDrawPoint(ren,i,j);
-        //         }
-        //     }
-        // }
-        for (double i = 0; i < 2 * PI; i += 0.05)
+        for (int i = x - radius; i < x + radius; i++)
         {
-            double x0 = x + (radius * cos(i));
-            double y0 = y + (radius * sin(i));
-            // SDL_RenderDrawPoint(ren,x0,y0);
+            for (int j = y - radius; j < y + radius; j++)
+            {
+                float dis = sqrt(((i-x)*(i-x)) + ((j-y)*(j-y)));
+                if (dis <= radius)
+                {
+                    SDL_RenderDrawPoint(ren,i,j);
+                }
+            }
         }
+        
         
     }
     void Revolution(SDL_Renderer *ren, double r1, double e, int p, int q){
