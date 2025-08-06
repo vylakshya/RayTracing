@@ -31,7 +31,7 @@ int main(){
     SDL_Event e;
     float m1 = 100;
     float r1 = 70;
-    float d = 300;
+    float d = 350;
     float m2 = 40;
     float r2 = 20;
     planet P(m1, r1), E(m2,r2);
@@ -54,12 +54,7 @@ int main(){
         }
         double x = a * cos(th) + x0;
         double y = b * sin(th) + y0;
-        double p,q;
-        if (e.type == SDL_MOUSEMOTION && e.motion.state != 0)
-        {
-                p = e.button.x;
-				 q = e.button.y;
-        }
+       
         
             if (th <= 2 * PI )
             {
@@ -71,10 +66,9 @@ int main(){
                 P.Body(ren,400 - (a*ecc),400);
                 SDL_SetRenderDrawColor(ren,255,0,0,255);
                 E.Body(ren,x,y);
+                SDL_SetRenderDrawColor(ren,255,255,0,150);
+                r.GenRay(ren,400 - (a*ecc),400,x,y,r2,x,y);
             }
-            SDL_SetRenderDrawColor(ren,255,255,0,150);
-            // r.GenRay(ren,p,q);
-            r.GenRay(ren,400 - (a*ecc),400,x,y,r2);
                 th = th + 0.01;
             
             if (th >= 2 * PI)
