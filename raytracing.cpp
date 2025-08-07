@@ -54,11 +54,8 @@ int main(){
         }
         double x = a * cos(th) + x0;
         double y = b * sin(th) + y0;
-       
-        
             if (th <= 2 * PI )
             {
-                
                 SDL_SetRenderDrawColor(ren,0,0,0,255);
                 SDL_RenderClear(ren);
                 SDL_SetRenderDrawColor(ren,255,255,0,255);
@@ -67,20 +64,16 @@ int main(){
                 SDL_SetRenderDrawColor(ren,255,0,0,255);
                 E.Body(ren,x,y);
                 SDL_SetRenderDrawColor(ren,255,255,0,150);
-                r.GenRay(ren,400 - (a*ecc),400,x,y,r2,x,y);
+                r.GenRay(ren,400 - (a*ecc),400,x,y,r2,x,y,400 - (a*ecc),400);
             }
                 th = th + 0.01;
-            
             if (th >= 2 * PI)
             {
                 th = 0;
             }
             SDL_Delay(4);
-    
       SDL_RenderPresent(ren);
     }
-    
-
     SDL_DestroyRenderer(ren);
     SDL_DestroyWindow(win);
     SDL_Quit();
