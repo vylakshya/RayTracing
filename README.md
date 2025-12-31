@@ -6,7 +6,7 @@ Dynamic Light Transport: Real-time calculation of light attenuation from a movin
 
 Mathematical Precision: Solves ray-geometry intersections using algebraic methods (quadratic solvers) rather than mesh heuristics.
 
-N-Body Dynamics: Real-time gravitational interaction between multiple celestial bodies using [Euler/Verlet] integration.
+N-Body Dynamics: Real-time gravitational interaction between multiple celestial bodies using integration.
 
 Development Roadmap
 -> CPU-based intersection logic (SDL2).
