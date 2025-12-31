@@ -1,7 +1,7 @@
 🌌 Physically-Based Ray Tracing & Celestial Mechanics
 A C++ simulation engine that combines Whitted-style ray tracing with Newtonian gravitational dynamics.
 
-Core Features
+Core Features :
 Dynamic Light Transport: Real-time calculation of light attenuation from a moving stellar source.
 
 Mathematical Precision: Solves ray-geometry intersections using algebraic methods (quadratic solvers) rather than mesh heuristics.
