@@ -9,12 +9,13 @@ Mathematical Precision: Solves ray-geometry intersections using algebraic method
 N-Body Dynamics: Real-time gravitational interaction between multiple celestial bodies using [Euler/Verlet] integration.
 
 Development Roadmap
-[x] CPU-based intersection logic (SDL2).
+-> CPU-based intersection logic (SDL2).
 
-[x] Dynamic source-to-surface intensity calculation.
+ -> Dynamic source-to-surface intensity calculation.
 
-[ ] [In Progress] CUDA Kernel Migration: Offloading pixel-shading to GPU.
+In Progress :
+-> CUDA Kernel Migration: Offloading pixel-shading to GPU.
 
-[ ] [In Progress] Implementing BVH (Bounding Volume Hierarchy) for spatial optimization.
+-> Implementing BVH (Bounding Volume Hierarchy) for spatial optimization.
 
-3. Pro-Tips for y
+Update : Shifting the progress completely to new repo : https://github.com/vylakshya/RayTracing2.0
