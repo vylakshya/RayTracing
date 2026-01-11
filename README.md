@@ -1,4 +1,4 @@
-🌌 Physically-Based Ray Tracing & Celestial Mechanics
+## 🌌 Physically-Based Ray Tracing & Celestial Mechanics
 A C++ simulation engine that combines Whitted-style ray tracing with Newtonian gravitational dynamics.
 
 Core Features :
@@ -8,12 +8,12 @@ Mathematical Precision: Solves ray-geometry intersections using algebraic method
 
 N-Body Dynamics: Real-time gravitational interaction between multiple celestial bodies using integration.
 
-Development Roadmap
+## Development Roadmap
 -> CPU-based intersection logic (SDL2).
 
  -> Dynamic source-to-surface intensity calculation.
-
-In Progress :
+ 
+## In Progress 
 -> CUDA Kernel Migration: Offloading pixel-shading to GPU.
 
 -> Implementing BVH (Bounding Volume Hierarchy) for spatial optimization.
