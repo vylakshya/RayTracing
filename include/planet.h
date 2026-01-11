@@ -21,13 +21,7 @@ class planet{
                 }
             }
         }
-        // for (double i = 0; i < 2 * PI; i += 0.05)
-        // {
-        //     double x0 = x + (radius * cos(i));
-        //     double y0 = y + (radius * sin(i));
-
-        //     SDL_RenderDrawPoint(ren,x0,y0);
-        // }
+    
         
     }
     void Revolution(SDL_Renderer *ren, double r1, double e, int p, int q){
@@ -45,3 +39,4 @@ class planet{
         }
     }   
 };
+
