@@ -1,6 +1,6 @@
 #define SDL_MAIN_HANDLED
 #include<iostream>
-#include<SDL2/SDL.h>
+
 #include "planet.h"
 #include "ray.h"
 
@@ -101,5 +101,6 @@ int main(){
 
     return 0;
 }
+
 
 
